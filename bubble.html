@@ -1,0 +1,85 @@
+<html>
+	<head>
+		<title>
+			Bubble
+		</title>
+		<style>
+			.bubble
+			{
+				/*dimensions*/
+				height: 200px;
+				width: 200px;
+				/*spacing*/
+				marin: auto;
+				padding: auto;
+				border:2px solid white;
+				/*colors*/
+				background-color: teal;
+				color:orange;
+				/*fontification*/
+				font-size:25px;
+				font-family: cursive;
+				font-weight: bolder;
+				/*animations*/
+				animation-name: warping;
+				animation-delay: 2s;
+				animation-iteration: 1;
+				animation-duration:7s;
+				animation-timing-function:linear;
+				/*text edits*/
+				text-align:center;
+			}
+			@keyframes warping
+			{
+				0%{top: 0% ; left:40%;height:50px; width: 50px;}
+				25%{top : 10%; left: 40% ; height: 70px; width: 70px;}
+				50%{top: 20%; left: 40%; height:100px; width:100px;}
+				75%{top:20%; left: 40%; height:150px; width: 150px; }
+				100%{top:40%; left:50%; height: 200px; width: 200px;}
+			}
+			.bubble > textbox
+			{
+				height:40px;
+				max-width:180px;
+				inherits:inherit;
+				text-transform:lowercase;
+			}
+			.bubble > h1
+			{
+				font-size: 30px;
+				font-family: cursive;
+				font-weight:bolder;
+				color:inherit;
+				border:2px solid teal;
+				border-radius:10px 10px;
+				text-decoration:none;
+				float: left;
+				padding:2% 20% 2% 2%;
+			}
+			.btn
+			{
+				height: 40px;
+				width:70px;
+				font-size:30px;
+				font-family:cursive;
+				font-weight:bolder;
+				color:white;
+				background-color: teal;
+				border-radius:5px;
+				padding: auto;
+				margin:auto;
+			}
+			.btn:hover
+			{
+				cursor:pointer;
+				box-shadow:2px solid grey;
+			}
+		</style>
+		<body>
+			<div class= "bubble">
+				<h1>Enter Email</h1>
+				<textbox>
+					<button class="btn">Submit</button>
+					</div>
+		</body>
+		</html>
